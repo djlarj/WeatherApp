@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Weather App</title>
+    <title>The Geek Next Door - Weather App</title>
 </head>
 <body>
     <div class="container">
@@ -15,26 +15,17 @@
                     12:30 <span id="am-pm">PM</span>
                 </div>
                 <div class="date" id="date">
-                    Monday, May 24
+                    Monday, Mar 14
                 </div>
                 <div class="others" id="current-weather-items">
-                    <div class="weather-item">
-                        <div>Humidity</div>
-                        <div>95.2%</div>
-                    </div>
-                    <div class="weather-item">
-                        <div>Pressure</div>
-                        <div>121</div>
-                    </div>
-                    <div class="weather-item">
-                        <div>Wind Speed</div>
-                        <div>222</div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="place-container">
-                <div class="time-zone" id="timezone">Asia/Kolkata</div>
-                <div class="country" id="country">IN</div>
+                <div class="location" id="location">
+                    <div class="time-zone" id="timezone">America/Fresno</div>
+                    <div class="country" id="country">US</div>
+                </div>    
             </div>
         </div>
     </div>
@@ -78,10 +69,23 @@
                 <div class="temp">Day - 80&#176; F</div>
                 <div class="temp">Night - 60&#176; F</div>
             </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sun</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Day - 80&#176; F</div>
+                <div class="temp">Night - 60&#176; F</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Mon</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Day - 80&#176; F</div>
+                <div class="temp">Night - 60&#176; F</div>
+            </div>
         </div>
     </div>
 
     <!--JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
 
     <!-- Photo by <a href="https://unsplash.com/@halacious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hal Gatewood</a> on <a href="https://unsplash.com/s/photos/beach-sand-water?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

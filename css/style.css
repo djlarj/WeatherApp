@@ -7,7 +7,8 @@
 }
 
 body {
-    background:url('https://images.unsplash.com/photo-1495419597644-19934b6b7c40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80');
+    /* background:url('https://images.unsplash.com/photo-1495419597644-19934b6b7c40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80'); */
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -27,49 +28,68 @@ body {
 }
 
 .date-container {
+    background: rgba(24, 24, 27, 0.8);
+    border-radius: 10px;
+    border: 1px solid #eee;
     font-weight: 100;
+    margin: 0 10px;
+    padding: 15px 0;
 }
 
 .date-container .time {
-    font-size: 70px;
+    font-size: 30px;
+    /* margin: 10px 0; */
+    padding: 0 20px;
 }
 
-.date-container #am-pm {
+/* .date-container #am-pm {
     font-size: 30px;
-    margin-left: 20px;
-}
+} */
 
 .date-container .date {
     font-size: 30px;
-}
-
-.place-container {
-    text-align: end;
-}
-
-.place-container .time-zone {
-    font-size: 30px;
-    font-weight: 100;
-}
-
-.place-container .country {
-    font-size: 12px;
-    font-weight: 700;
+    /* margin: 10px 0; */
+    padding: 0 20px;
 }
 
 .current-info .others {
     display: flex;
     flex-direction: column;
-    background: rgba(24, 24, 27, 0.6);
-    border-radius: 10px;
-    border: 1px solid #eee;
-    padding: 20px;
-    margin: 10px 0;
+    font-size: 16px;
+    /* margin: 10px 0; */
+    padding: 0 20px;
 }
 
 .current-info .others .weather-item {
     display: flex;
     justify-content: space-between;
+}
+
+.place-container {
+    text-align: end;
+    margin: 0 10px;
+    /* padding: 15px 0; */
+}
+
+.location {
+    background: rgba(24, 24, 27, 0.8);
+    border-radius: 10px;
+    border: 1px solid #eee;
+    font-weight: 100;
+    /* margin: 10px 0; */
+    padding: 0 20px;
+}
+
+.place-container .time-zone {
+    font-size: 30px;
+    /* margin: 10px 0; */
+    padding-top: 15px;
+}
+
+.place-container .country {
+    font-size: 16px;
+    /* margin: 10px 0; */
+    padding-bottom: 15px;
 }
 
 .future-forecast {
@@ -81,19 +101,18 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 70px;
 }
 
 .future-forecast .today {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* My Code */
+    background: rgba(0, 0, 0, 0.2);
     border: 1px solid #eee;
     border-radius: 10px;
-    /* margin: 0 10px; */
-    margin: 0 10px 0 0;
-    padding: 47px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 0 15px;
 }
 
 .future-forecast .today .day {
@@ -104,7 +123,8 @@ body {
 }
 
 .future-forecast .today .temp {
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 200;
     padding-top: 15px;
 }
 
@@ -115,6 +135,7 @@ body {
 .weather-forecast .weather-forecast-item {
     display: flex;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
     border: 1px solid #eee;
     border-radius: 10px;
     align-items: center;
@@ -132,9 +153,10 @@ body {
 
 .weather-forecast .weather-forecast-item .temp {
     font-weight: 100;
+    font-size: 12px;
 }
 
-@media only screen and (max-width:730px) {
+@media only screen and (max-width: 730px) {
     
     .container {
         padding: 20px;
@@ -144,44 +166,19 @@ body {
         justify-content: start;
         align-items: none;
         overflow-y: scroll;
-    }
-
-    .future-forecast .today {
-        margin: 0 10px 0 0;
-        padding: 5px;
-    }
-        
-    .future-forecast .today .temp {
-        font-size: 23px;
-    }
-
-    .date-container .time {
-        font-size: 50px;
-    }
-
-    .date-container #am-pm {
-        font-size: 20px;
-    }
-
-    .date-container .date {
-        font-size: 20px;
+        padding: 20px;
     }
 
     .place-container {
-        text-align: end;
-        margin-top: 15px;
+        margin-top: 20px;
+        /* padding-top: 15px; */
     }
+}
 
-    .place-container .time-zone {
-        font-size: 20px;
-
-    }
-
-    .current-info .others {
-        padding: 12px;
-    }
-
-    .current-info .others .weather-item {
-        font-size: 14px;
+@media only screen and (max-width: 1920px) {
+    .future-forecast {
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
     }
 }
