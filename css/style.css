@@ -7,7 +7,7 @@
 }
 
 body {
-    /* background:url('https://images.unsplash.com/photo-1495419597644-19934b6b7c40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80'); */
+    background:url('https://images.unsplash.com/photo-1495419597644-19934b6b7c40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80');
     background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,10 +42,6 @@ body {
     padding: 0 20px;
 }
 
-/* .date-container #am-pm {
-    font-size: 30px;
-} */
-
 .date-container .date {
     font-size: 30px;
     /* margin: 10px 0; */
@@ -63,6 +59,10 @@ body {
 .current-info .others .weather-item {
     display: flex;
     justify-content: space-between;
+}
+
+.current-info .others #weather-item {
+    font-weight: 400;
 }
 
 .place-container {
@@ -106,13 +106,14 @@ body {
 
 .future-forecast .today {
     display: flex;
+    flex-direction: column;
     background: rgba(0, 0, 0, 0.2);
     border: 1px solid #eee;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
     margin: 0 10px;
-    padding: 0 15px;
+    padding: 15px;
 }
 
 .future-forecast .today .day {
@@ -123,9 +124,15 @@ body {
 }
 
 .future-forecast .today .temp {
-    font-size: 15px;
-    font-weight: 200;
-    padding-top: 15px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.future-forecast .today .desc {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .future-forecast .weather-forecast {
@@ -152,8 +159,15 @@ body {
 }
 
 .weather-forecast .weather-forecast-item .temp {
-    font-weight: 100;
     font-size: 12px;
+    font-weight: 100;
+}
+
+.weather-forecast .weather-forecast-item .desc {
+    font-size: 12px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 @media only screen and (max-width: 730px) {
@@ -171,7 +185,6 @@ body {
 
     .place-container {
         margin-top: 20px;
-        /* padding-top: 15px; */
     }
 }
 
