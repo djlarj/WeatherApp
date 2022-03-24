@@ -38,13 +38,11 @@ body {
 
 .date-container .time {
     font-size: 30px;
-    /* margin: 10px 0; */
     padding: 0 20px;
 }
 
 .date-container .date {
     font-size: 30px;
-    /* margin: 10px 0; */
     padding: 0 20px;
 }
 
@@ -52,7 +50,6 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    /* margin: 10px 0; */
     padding: 0 20px;
 }
 
@@ -63,12 +60,12 @@ body {
 
 .current-info .others #weather-item {
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .place-container {
     text-align: end;
     margin: 0 10px;
-    /* padding: 15px 0; */
 }
 
 .location {
@@ -76,19 +73,16 @@ body {
     border-radius: 10px;
     border: 1px solid #eee;
     font-weight: 100;
-    /* margin: 10px 0; */
     padding: 0 20px;
 }
 
 .place-container .time-zone {
     font-size: 30px;
-    /* margin: 10px 0; */
     padding-top: 15px;
 }
 
 .place-container .country {
-    font-size: 16px;
-    /* margin: 10px 0; */
+    font-size: 12px;
     padding-bottom: 15px;
 }
 
@@ -176,6 +170,22 @@ body {
         padding: 20px;
     } 
 
+    .date-container .time {
+        font-size: 20px;
+    }
+    
+    .date-container .date {
+        font-size: 20px;
+    }
+
+    .place-container {
+        margin-top: 10px;
+    }
+
+    .place-container .time-zone {
+        font-size: 16px;
+    }
+
     .future-forecast {
         justify-content: start;
         align-items: none;
@@ -183,9 +193,14 @@ body {
         padding: 20px;
     }
 
-    .place-container {
-        margin-top: 20px;
+}
+
+@media only screen and (max-height: 670px) {
+
+    .current-info .others {
+        font-size: 14px;
     }
+
 }
 
 @media only screen and (max-width: 1920px) {

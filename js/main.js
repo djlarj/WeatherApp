@@ -41,12 +41,16 @@ function getWeatherData () {
 
 function showWeatherData (data) {
     let {temp, feels_like, humidity, pressure, wind_speed, uvi, sunrise, sunset} = data.current;
+    let {description} = data.current.weather[0]
 
     timeZoneEl.innerHTML = data.timezone;
     countryEl.innerHTML = data.lat + ' ' + data.lon + ' '
 
     currentWeatherItemsEl.innerHTML = 
     `<div class="weather-item" id="weather-item">
+        <div>${description}</div>
+    </div>
+    <div class="weather-item" id="weather-item">
         <div>Temperature</div>
         <div>${temp.toFixed()}&#176; F</div>
     </div>
