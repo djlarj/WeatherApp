@@ -67,7 +67,7 @@ function showWeatherData (data) {
         <div>${(pressure/33.864).toFixed(2)} Hg</div>
     </div>
     <div class="weather-item">
-        <div>Wind Speed</div>
+        <div>Wind Speed &nbsp; &nbsp;</div>
         <div>${wind_speed.toFixed()} mph</div>
     </div>
     <div class="weather-item">
