@@ -51,7 +51,7 @@ function showWeatherData (data) {
         <div>${description}</div>
     </div>
     <div class="weather-item" id="weather-item">
-        <div>Temperature &nbsp;</div>
+        <div>Temperature &nbsp; &nbsp;</div>
         <div>${temp.toFixed()}&#176; F</div>
     </div>
     <div class="weather-item">
