@@ -210,3 +210,24 @@ body {
         overflow-x: scroll;
     }
 }
+
+/* @media only screen and (max-height: 376px) {
+    .body {
+        overflow: auto;
+    }
+
+    .future-forecast {
+        position: static;
+        overflow: auto; 
+    }
+ } */
+
+/* @media only screen and (orientation:landscape) {
+    .body {
+        overflow: auto;
+    }
+
+    .future-forecast {
+        position: static;
+    }
+ } */
