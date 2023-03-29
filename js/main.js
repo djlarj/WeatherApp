@@ -28,6 +28,7 @@ setInterval(() => {
 getWeatherData()
 function getWeatherData () {
     navigator.geolocation.watchPosition((success) => {
+        //changed from getCurrentPosition method
         
         let {latitude, longitude} = success.coords;
         
