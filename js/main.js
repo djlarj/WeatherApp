@@ -36,6 +36,9 @@ function getWeatherData () {
         // console.log(data);
         showWeatherData(data);
         });
+    },
+    (error) => {
+        console.log(error);
     });
 }
 
