@@ -211,23 +211,15 @@ body {
     }
 }
 
-/* @media only screen and (max-height: 376px) {
-    .body {
+@media only screen and (max-width: 932px) and (orientation:landscape) {
+    
+    body {
         overflow: auto;
-    }
-
-    .future-forecast {
-        position: static;
-        overflow: auto; 
-    }
- } */
-
-/* @media only screen and (orientation:landscape) {
-    .body {
-        overflow: auto;
+        height: auto;
     }
 
     .future-forecast {
         position: static;
     }
- } */
+
+ }
